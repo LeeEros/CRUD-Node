@@ -1,0 +1,19 @@
+{
+  "name": "crud-node",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "run test",
+    "start": "nodemon server.js"
+  },
+  "author": "Lee",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.1",
+    "webpack": "^5.91.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
