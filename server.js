@@ -4,10 +4,10 @@ const app = express();
 const port = 3000;
 
 const connection = mysql.createConnection({
-    host: 'mariadb',
-    user: 'root',
-    password: 'root',
-    database: 'crud'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'password',
+    database: process.env.DB_NAME || 'crud'
 });
 
 connection.connect(err => {
