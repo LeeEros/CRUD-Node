@@ -4,13 +4,14 @@
   "main": "server.js",
   "scripts": {
     "test": "run test",
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "author": "Lee",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.1",
+    "nodemon": "^3.1.2",
+    "sucrase": "^3.35.0",
     "webpack": "^5.91.0"
   },
   "dependencies": {
