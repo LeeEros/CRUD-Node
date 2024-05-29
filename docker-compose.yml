@@ -8,10 +8,11 @@ services:
     depends_on:
       - mariadb
     environment:
-      DB_HOST: mariadb
-      DB_USER: root
-      DB_PASSWORD: password
-      DB_NAME: crud
+      DATABASE_HOST: mariadb
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: password
+      DATABASE: crud
+    command: sh -c "while ! nc -z mariadb 3306; do sleep 1; done; npm start"
 
   mariadb:
     image: mariadb:10.5
@@ -20,3 +21,8 @@ services:
       MYSQL_DATABASE: crud
     ports:
       - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
