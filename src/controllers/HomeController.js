@@ -4,8 +4,8 @@ class HomeController {
     async index(req, res) {
         const newUser = await User.create({
             name: 'Lee',
-            password: 'teste',
-            email: 'lee@pormade.com.br',
+            password: 'teste131',
+            email: 'lee1@pormade.com.br',
             date_birth: '11/05/2000'
 
         });
