@@ -12,7 +12,6 @@ services:
       DATABASE_USERNAME: root
       DATABASE_PASSWORD: password
       DATABASE: crud
-    command: sh -c "while ! nc -z mariadb 3306; do sleep 1; done; npm start"
 
   mariadb:
     image: mariadb:10.5

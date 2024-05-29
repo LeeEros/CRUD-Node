@@ -1,8 +1,15 @@
+import User from '../models/user'
+
 class HomeController {
-    index(req, res) {
-        res.json({
-            tudoCerto: true,
+    async index(req, res) {
+        const newUser = await User.create({
+            name: 'Lee',
+            password: 'teste',
+            email: 'lee@pormade.com.br',
+            date_birth: '11/05/2000'
+
         });
+        res.json(newUser);
     }
 }
 
