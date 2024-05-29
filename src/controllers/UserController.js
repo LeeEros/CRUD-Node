@@ -1,6 +1,6 @@
 import User from '../models/user'
 
-class HomeController {
+class UserController {
     async index(req, res) {
         const newUser = await User.create({
             name: 'Lee',
@@ -13,4 +13,4 @@ class HomeController {
     }
 }
 
-export default new HomeController();
+export default new UserController();
