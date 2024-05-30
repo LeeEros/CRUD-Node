@@ -1,6 +1,7 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-module.exports = {
+export default {
     dialect: 'mariadb',
     host: process.env.DATABASE_HOST,
     port: process.env.DATABASE_PORT || 3306,
@@ -15,7 +16,7 @@ module.exports = {
         updatedAt: 'updated_at',
     },
     dialectOptions: {
-        connectTimeout: 60000, // Aumentando o tempo de timeout para 60 segundos
+        connectTimeout: 60000,
         timezone: 'America/Sao_Paulo'
     },
     timezone: 'America/Sao_Paulo'
