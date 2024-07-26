@@ -2,7 +2,6 @@
   "name": "crud-node",
   "version": "1.0.0",
   "main": "server.js",
-  "type":"module",
   "scripts": {
     "test": "run test",
     "dev": "nodemon server.js"

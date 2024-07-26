@@ -1,10 +1,10 @@
 import dotenv from 'dotenv';
 dotenv.config()
 
-import './src/database/connection.js'
+import './src/database/connection'
 
 import express from "express";
-import userRoutes from './src/routes/userRoute.js';
+import userRoutes from './src/routes/userRoute';
 
 class App {
     constructor() {
